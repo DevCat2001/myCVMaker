@@ -1,0 +1,125 @@
+@page {
+  size: A4;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  src: url("Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.025rem;
+  line-height: 1.4em;
+}
+
+.sheet {
+  display: grid;
+  align-content: space-between;
+}
+
+.full-name {
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.professional-title {
+  color: #696969;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.17em;
+  /* font-weight: normal; */
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+html {
+  overflow: scroll;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 0.9em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 0.81em;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cv-section {
+  column-count: 2;
+}
+
+.misc-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cv-section > * {
+  display: inline-grid;
+  page-break-inside: avoid;
+}
+
+.contain-centered {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.cv-item-title {
+  font-size: 1.125em;
+  font-weight: bold;
+  color: #2079c7;
+  margin-bottom: 0.5em;
+}
+
+.cv-item-container {
+  margin-bottom: 0.5em;
+}
+.cv-item-container .year {
+  color: #696969;
+}
+.cv-item-container .description {
+  color: #696969;
+}
+.cv-item-container .cv-item-headline {
+  font-weight: normal;
+}
+.cv-item-container .cv-item-headline .name {
+  font-weight: bold;
+}
+.cv-item-container .cv-item-headline .job-title {
+  font-style: italic;
+}
+
+ul li {
+  list-style-type: none;
+}
